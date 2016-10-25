@@ -1,8 +1,2 @@
-{{#each model as |customer|}}
-<ul>
-  <li>
-    {{customer.name}}
-  </li>
-</ul>
-
-{{/each}}
+{{customer-list customers=model tj=true}}
+{{#link-to "subscribed"}} Subscribed People {{/link-to}}
